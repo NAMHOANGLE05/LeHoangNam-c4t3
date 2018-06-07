@@ -247,14 +247,27 @@
 
 
 # 2.1
-Name = input("Type your name ")
-print("Hello, my nam is ",Name, " and these are my sheep sizes")
+# Name = input("Type your name ")
+# print("Hello, my nam is ",Name, " and these are my sheep sizes")
 Sheep_sizes = []
 for _ in range (7):
     Sizes = int (input ("Sizes of sheep "))
     Sheep_sizes.append ( Sizes )
 print (*Sheep_sizes, sep = ", ")
-for sizes in r
+
+for i in range (len(Sheep_sizes)):
+    if (Sheep_sizes[i-1])<(Sheep_sizes[i]):
+        Biggest = Sheep_sizes [i]
+print("Now my biggest sheep has size ", Biggest, " let's shear it")
+
+Sheep_sizes.remove (Sheep_sizes[i])
+print("After sheering, hear is my flock")
+print ( *Sheep_sizes, sep = ", ")
+
+for Sizes in range ( Sheep_sizes )
+
+
+
 
 
 
